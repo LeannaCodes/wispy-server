@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "nodemon": "^2.0.19"
+    "netlify-lambda": "^2.0.15",
+    "nodemon": "^2.0.19",
+    "serverless-http": "^3.0.1"
   }
 }
